@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="navigation-top">
+        <img src="./imgs/logo.png" alt="trailiex logo" />
+        <div>
+          <ul class="menu">
+            <li><a href="#hero-id">Home</a></li>
+            <li><a href="#action">Aktion</a></li>
+            <li><a href="#willys_card">Kategorie</a></li>
+            <li><a href="#titleWilly">Buchen</a></li>
+            <li><a href="#kontakt-anfrage">Kontakte</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hero-id">
+      <div class="hero-image">
+        <div class="form-container">
+          <form id="my-form2">
+            <div class="form-row">
+              <div class="column">
+                <label ifor="from">Abholdatum</label>
+                <input id="from-date1" type="date" name="from" required />
+              </div>
+              <div class="column">
+                <label for="to">Rückgabedatum:</label>
+                <input type="date" id="to-date1" name="to" required />
+              </div>
+              <div class="column">
+                <select id="jepp-type1" name="jeep-select">
+                  <option selected disabled>Jeep Typ</option>
+                  <option>Willy</option>
+                  <option>Rubicon</option>
+                  <option>Safari</option>
+                </select>
+              </div>
+              <div class="column">
+                <button
+                  type="button"
+                  id="hero-contact-btn"
+                  class="buttonCall"
+                  data-modal-id="modalRubicon"
+                >
+                  Anfragen
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="slogan">
+        <p>Geländewagen mieten.</p>
+        <h1>Keine Kompromisse.</h1>
+      </div>
+    </div>
+
+    <section id="service_section">
+      <!-- Container für gear icon und Text -->
+      <div class="section_container">
+        <div class="icon_section">
+          <img src="./imgs/gear_icon.png" alt="gear icon" />
+        </div>
+        <div class="text_section">
+          <h2>zuverlässige geländeautos.</h2>
+          <p>Von Schotterpisten bis zum unwegsamen Gebirgsgelände.</p>
+        </div>
+      </div>
+
+      <!-- Container für Clipboard icon und Text -->
+      <div class="section_container">
+        <div class="icon_section">
+          <img src="./imgs/clipboard_icon.png" alt="gear icon" />
+        </div>
+        <div class="text_section">
+          <h2>Offroad Schulung.</h2>
+          <p>wir zeigen ihnen, wie sie sicher mit den autos umgehen.</p>
+        </div>
+      </div>
+
+      <!-- Container für emoji icon und Text -->
+      <div class="section_container">
+        <div class="icon_section">
+          <img src="./imgs/emoji_icon.png" alt="gear icon" />
+        </div>
+        <div class="text_section">
+          <h2>wir kümmern uns.</h2>
+          <p>keine versteckten kosten,</p>
+          <p>nur der beste service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- action section -->
+    <div class="action contentbox" id="action">
+      <div class="content-action">
+        <h2 class="title">rubicon</h2>
+        <h3 class="subtitle">zum legendären Preis</h3>
+        <p class="preis-action">für 998€</p>
+        <p class="copy">Von Freitag bis Sonntag</p>
+        <button class="button buttonCall" data-modal-id="modalRubicon">
+          Anfragen
+        </button>
+      </div>
+    </div>
+
+    <div class="contentbox cards">
+      <!-- Willys Card -->
+      <div id="willys_card" class="infokarte">
+        <div class="head_card">willys</div>
+
+        <div class="text_cardContainer">
+          <div class="text_card">
+            Machen Sie Ihren nächsten Trip unvergesslich mit dieser Legende.
+          </div>
+        </div>
+
+        <div class="button_container">
+          <div class="button buttonCall" onclick="window.willys.showModal();">Mehr Info</div>
+    <dialog id="willys">
+	    <section id="slider">       
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        
+        <label for="s1" id="slide1"><img src="./imgs/willys1.jpg" alt=""></label>
+        <label for="s2" id="slide2"><img src="./imgs/willys2.jpg" alt=""></label>
+        <label for="s3" id="slide3"><img src="./imgs/willys3.jpg" alt=""></label>
+        <label for="s4" id="slide4"><img src="./imgs/willys4.jpg" alt=""></label>
+        <label for="s5" id="slide5"><img src="./imgs/willys5.jpg" alt=""></label>
+      </section>
+    <h2>WILLYS</h2>
+	<p><b>Die Legende in neuem Design</b></p>
+    <p>Der 2022 Jeep Willys ist eine moderne Interpretation des legendären Großvaters aller Jeeps. 
+        Mit robustem Design und Geländetauglichkeit verbindet er die Vergangenheit mit der Gegenwart. 
+        Diese Budget freundliche Variante ist Sicherer und mit besser Off-Road Performace als alle seine Vorgänger.</p>
+	<p><b>Machen Sie Ihren nächsten Trip unvergesslich mit dieser Legend</b></p>
+    <p>
+        <ul>
+            <li>Modell: Jeep Wrangler Willys</li>
+            <li>Baujahr: 2022</li>
+            <li>Türen: 2 oder 4 Türer</li>
+            <li>Antrieb: Selec-Trac-Allradantrieb</li>
+            <li>Motor: 3.6 Liter V-6 Benzin</li>
+            <li>Leistung: 285 PS @ 6,400RPM</li>
+            <li>Getriebe: Sechsgang-Schaltgetriebe</li>
+            <li>Antrieb: Allradantrieb</li>
+            <li>Verbrauch: 8,1 L/100km</li>
+          </ul>    
+    </p>
+	  <button class="x" onclick="window.willys.close();" aria-label="schließen">❌</button>
+   </dialog>
+        </div>
+      </div>
+
+      <!-- Rubicon Card -->
+      <div id="rubicon_card" class="infokarte">
+        <div class="head_card">rubicon</div>
+        <div class="text_cardContainer">
+          <div class="text_card">
+            Mit dem Jeep Wrangler Rubicon Recon <br />
+            gibt es keine Situation, <br />auf die Sie nicht vorbereitet sind.
+          </div>
+        </div>
+        <div class="button_container">
+          <div class="button buttonCall" onclick="window.rubicon.showModal();">Mehr Info</div>
+          <dialog id="rubicon">
+            <section id="slider">       
+                  <input type="radio" name="slider1" id="s11" checked>
+                  <input type="radio" name="slider1" id="s12">
+                  <input type="radio" name="slider1" id="s13">
+                  <input type="radio" name="slider1" id="s14">
+                  <input type="radio" name="slider1" id="s15">
+                  
+                  <label for="s11" id="slide11"><img src="./imgs/rubicon1.jpg" alt=""></label>
+                  <label for="s12" id="slide12"><img src="./imgs/rubicon2.jpg" alt=""></label>
+                  <label for="s13" id="slide13"><img src="./imgs/rubicon3.jpg" alt=""></label>
+                  <label for="s14" id="slide14"><img src="./imgs/rubicon4.jpg" alt=""></label>
+                  <label for="s15" id="slide15"><img src="./imgs/rubicon5.jpg" alt=""></label>
+                </section>
+              <h2>RUBICON</h2>
+              <p><b>Der Geländewagen für Offroad-Liebhaber</b></p>
+            <p>Kein Fluss ist zu tief, kein Berg ist zu hoch. Mit dem Rubicon Recon ist der Horizont das Limit. 
+                  Dank seines robusten 4×4-Antrieb ist er für extreme Geländesituationen bestens gerüstet. 
+                  Dank seinem geräumig Innenraum und seiner funktionalität müssen Sie auf nichts verzichten.</p>  
+                  <p><b>Mit dem Jeep Wrangler Rubicon Recon sind gibt es keine Situation, auf die Sie nicht vorbereitet sind</b></p>
+                  <p>
+                      <ul>
+                          <li>Modell: Jeep Wrangler Rubicon Recon</li>
+                          <li>Baujahr: 2022</li>
+                          <li>Türen: 2 oder 4 Türer</li>
+                          <li>Motor: 2.0 Liter V-4 Benzin</li>
+                          <li>Leistung: 272 PS @ 6,400RPM</li>
+                          <li>Getriebe: Achtgang-Automatikgetriebe</li>
+                          <li>Antrieb: Allradantrieb</li>
+                          <li>Verbrauch: 11,4 L/100 km</li>
+                        </ul>    
+                  </p>
+            <button class="x" onclick="window.rubicon.close();" aria-label="schließen">❌</button>
+          </dialog>
+        </div>
+      </div>
+
+      <!-- Safari Card -->
+      <div id="safari_card" class="infokarte">
+        <div class="head_card">safari</div>
+
+        <div class="text_cardContainer">
+          <div class="text_card">
+            Persönlich auf Sie und Ihre Anforderungen konfiguriert und
+            zugeschnitten.
+          </div>
+        </div>
+
+        <div class="button_container">
+          <div class="button buttonCall" onclick="window.safari.showModal();">Mehr Info</div>
+          <dialog id="safari">
+            <section id="slider">       
+                  <input type="radio" name="slider2" id="s21" checked>
+                  <input type="radio" name="slider2" id="s22">
+                  <input type="radio" name="slider2" id="s23">
+                  <input type="radio" name="slider2" id="s24">
+                  <input type="radio" name="slider2" id="s25">
+                  
+                  <label for="s21" id="slide21"><img src="./imgs/safari1.jpg" alt=""></label>
+                  <label for="s22" id="slide22"><img src="./imgs/safari2.jpg" alt=""></label>
+                  <label for="s23" id="slide23"><img src="./imgs/safari3.jpg" alt=""></label>
+                  <label for="s24" id="slide24"><img src="./imgs/safari4.jpg" alt=""></label>
+                  <label for="s25" id="slide25"><img src="./imgs/safari5.jpg" alt=""></label>
+                </section>
+              <h2>SAFARI</h2>
+            <p><b>Mit Luxus und dem Gefühl von Freiheit ins Gelände</b></p>
+            <p>Der Jeep Sahara kombiniert luxuriöses Design mit dem Freiheitsgefühl, das nur ein Cabrio bieten kann. 
+                  Entfernen Sie einfach die Türen und das Dach, um sich ins Abenteuer zu stürzen. </p>  
+                  <p><b>Bitte entfernen Sie die Türen nicht, wenn Sie in einen Naturpark fahren. Sie machen es den 
+                      Löwen zu einfach</b></p>
+                  <p>
+                      <ul>
+                          <li>Modell: Jeep Wrangler Sahara</li>
+                          <li>Baujahr: 2024</li>
+                          <li>Türen: 4 Türer</li>
+                          <li>Motor: 2 Liter V-4 Benzin / alternativ 2,2 Liter V-4 Diesel</li>
+                          <li>Leistung: 270 PS @ 5,250RPM</li>
+                          <li>Getriebe: Achtgang-Automatikgetriebe</li>
+                          <li>Antrieb: Allradantrieb</li>
+                          <li>Verbrauch: 8,5 L/100 km</li>
+                        </ul>    
+                  </p>
+            <button class="x" onclick="window.safari.close();" aria-label="schließen">❌</button>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abschnitt für Willys -->
+    <section class="CarSection contentbox" id="Willys">
+      <div class="content">
+        <!-- Titel und Untertitel für Willys -->
+        <h1 class="title" id="titleWilly">Willys</h1>
+        <h2 class="subtitle" id="subTWilly">Legende Fahren</h2>
+        <!-- Text und Liste für Willys -->
+        <p class="text">
+          Machen Sie Ihren nächsten Trip unvergesslich mit dieser Legende..
+        </p>
+
+        <ul class="list">
+          <li>Jeep Wrangler Willys</li>
+          <li>285 PS Allradantrieb</li>
+          <li>3.6 Liter V-6 Benzin</li>
+        </ul>
+        <!-- Button für Anfragen für Willys -->
+        <button class="button buttonCall" data-modal-id="modalRubicon">
+          Anfragen
+        </button>
+      </div>
+
+      <!-- Modal für Willys -->
+      <div id="modalWillys" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Text für das Modal-Fenster des Willys -->
+          <p>
+            Hier kannst du deinen Text für das Modal-Fenster des Willys
+            einfügen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abschnitt für Rubicon -->
+    <section class="CarSection contentbox" id="Rubicon">
+      <div class="content">
+        <!-- Titel und Untertitel für Rubicon -->
+        <h1 class="title" id="titleRubicon">Rubicon</h1>
+        <h2 class="subtitle" id="subTRubicon">Plug-in-Hybrid</h2>
+        <!-- Text und Liste für Rubicon -->
+        <p class="text">
+          Mit dem Jeep Wrangler Rubicon Recon gibt es keine Situation, auf die
+          Sie nicht vorbereitet sind.
+        </p>
+        <ul class="list">
+          <li>Jeep Wrangler Rubicon Recon</li>
+          <li>272 PS Allradantrieb</li>
+          <li>2.0 Liter V-4 Benzin</li>
+        </ul>
+        <!-- Button für Anfragen für Rubicon -->
+        <button class="button buttonCall" data-modal-id="modalRubicon">
+          Anfragen
+        </button>
+      </div>
+
+      <!-- Modal für Rubicon -->
+      <div id="modalRubicon" class="modal w3-animate-opacity">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Text für das Modal-Fenster des Rubicon -->
+          <div id="spinner" style="display: none;">
+            <span  class="loader"></span>
+          </div>
+          <div class="confirmation_field" id="confirm-alert" style="display: none;">
+            <div class="text_container">
+                <h3>Ihre Anfrage wurde erfolgreich versendet.</h3>
+                <p>Sie erhalten schnellstmöglich von uns eine Antwort.</p>
+            </div>
+            <img class="check_icon" src="imgs/check-icon.png" alt="check_icon">
+        </div>
+          <form id="my-form" class="formular-fuer-antrag" onkeydown="if(event.keyCode === 13) return false;">
+            <!--Datums Sektion vom Formular-->
+            <div class="antragsformular_section">
+              <div class="antragsformular_datum">
+                <input id="from-date2" name="from" type="date" required />
+              </div>
+
+              <div class="antragsformular_datum">
+                <input id="to-date2" name="to" type="date" required />
+              </div>
+
+              <div class="antragsformular_datum">
+                <label for="jeep-select"></label>
+                <select id="jepp-type2" name="jeep-select" id="jeep-select">
+                  <option selected="" disabled="">Jeep Typ</option>
+                  <option>Willy</option>
+                  <option>Rubicon</option>
+                  <option>Safari</option>
+                </select>
+              </div>
+
+              <div class="antragsformular_datum">
+                <input name="submit" id="daten_senden" type="submit" />
+              </div>
+            </div>
+
+            <!--Offroad Sektion vom Formular-->
+            <div class="antragsformular_section">
+              <div class="antragsformular_kentnisse">
+                <label for="offroad-exp"></label>
+                <select name="offroad-exp" id="offroad-exp" required>
+                  <option selected disabled="">Offroad Kentnisse</option>
+                  <option value="Anfänger">Anfänger</option>
+                  <option value="Erfahren">Erfahren</option>
+                  <option value="Experte">Experte</option>
+                </select>
+              </div>
+              <div class="antragsformular_radios">
+                <p>Erstes Mal bei TRAILEX?</p>
+              </div>
+              <div class="antragsformular_radios">
+                <input
+                  type="radio"
+                  name="yesno"
+                  id="yes"
+                  value="1"
+                  checked
+                /><label for="yes">JA</label>
+                <input type="radio" name="yesno" id="no" value="0" /><label
+                  for="no"
+                  >NEIN</label
+                >
+              </div>
+            </div>
+
+            <!--Email Sektion vom Formular-->
+            <div class="antragsformular_section">
+              <div id="email_section">
+                <input
+                  name="email"
+                  type="text"
+                  placeholder="*Ihre E-mail"
+                  required
+                />
+              </div>
+            </div>
+
+            <!--Tel. Nr. Sektion vom Formular-->
+            <div class="antragsformular_section">
+              <div id="telefon_section">
+                <input
+                  name="tel"
+                  type="text"
+                  placeholder="*Ihre Tel. Nr."
+                  required
+                />
+              </div>
+            </div>
+
+            <!--Message Sektion vom Formular-->
+            <div class="antragsformular_section">
+              <div id="message_section">
+                <input
+                  name="msg"
+                  type="text"
+                  placeholder="*Wollen sie uns etwas mitteilen?"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abschnitt für Safari -->
+    <section class="CarSection contentbox" id="Safari">
+      <div class="content">
+        <!-- Titel und Untertitel für Safari -->
+        <h1 class="title" id="titleSafari">Safari</h1>
+        <h2 class="subtitle" id="subTSafari">High Performance</h2>
+        <!-- Text und Liste für Safari -->
+        <p class="text">
+          Persönlich auf Sie und Ihre Anforderungen konfiguriert und
+          zugeschnitten
+        </p>
+        <ul class="list">
+          <li>Verschiedene Modelle</li>
+          <li>270 PS bis 470 PS</li>
+          <li>6.4 Liter V-8 Benzin oder 2,2 Liter V-4 Diesel</li>
+        </ul>
+        <!-- Button für Anfragen für Safari -->
+        <button class="button buttonCall" data-modal-id="modalRubicon">
+          Anfragen
+        </button>
+      </div>
+
+      <!-- Modal für Safari -->
+      <div id="modalSafari" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Text für das Modal-Fenster des Safari -->
+          <p>
+            Hier kannst du deinen Text für das Modal-Fenster des Safari
+            einfügen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container_content">
+      <div class="container">
+        <div class="kontakt-container" id="kontakt-anfrage">
+          <div class="kontakt-inhalt">
+            <h1>Kontakt</h1>
+            <p>Schreib uns einfach oder ruf uns an.</p>
+            <p>
+              Wir beantworten gerne deine Fragen und helfen dir, eines unserer
+              besten fahrzeuge zu mieten.
+            </p>
+          </div>
+          <div class="kontakt-anfrage">
+            <div class="telephone">
+              <i class="fa fa-phone"></i
+              ><span class="nummer">+49 0987 4561 2323</span>
+            </div>
+            <div class="mail">
+              <i class="fa fa-envelope"></i
+              ><a href="mailto:support@trailex.de">support@trailex.de</a>
+            </div>
+          </div>
+        </div>
+        <div class="adresse-container">
+          <h1>Adresse</h1>
+          <div class="adresse">
+            <p>TRAILEX</p>
+            <p>Teutonenstraße 33-29</p>
+            <p>Leinfelden-Echterdingen</p>
+            <p>70771</p>
+          </div>
+          <div class="karte">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5267.697959592294!2d9.140759356433533!3d48.68925195756603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799dd4fc2610301%3A0x9b613b5f852ef1a2!2sTeutonenstra%C3%9Fe%2033-29%2C%2070771%20Leinfelden-Echterdingen!5e0!3m2!1sde!2sde!4v1715764300363!5m2!1sde!2sde"
+              width="558"
+              height="204"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- impressum -->
+
+    <div id="modalImpressum" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Text für das Modal-Fenster des Safari -->
+        <h2>Impressum</h2>
+        <h3>Firmenname: TRAILEX Offroad Autovermietung GmbH</h3>
+        <p><strong>Geschäftsführer:</strong> Max Mustermann</p>
+        <p>
+          <strong>Anschrift:</strong><br />
+          Musterstraße 123<br />
+          12345 Musterstadt<br />
+          Deutschland <br />
+        </p>
+        <p>
+          <strong>Kontakt:</strong><br />
+          <strong> Telefon:</strong> +49 1234 567890<br />
+          <strong> Fax:</strong> +49 1234 567891<br />
+          <strong> E-Mail:</strong> info@trailex-offroad.de<br />
+          <strong> Web:</strong>
+          <a href="https://www.trailex-offroad.de">www.trailex-offroad.de</a>
+        </p>
+        <p>
+          <strong>Handelsregister:</strong><br />
+          Amtsgericht Musterstadt, HRB 123456
+        </p>
+        <p><strong>Umsatzsteuer-Identifikationsnummer:</strong> DE123456789</p>
+        <p>
+          Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br />
+          Max Mustermann<br />
+          Adresse wie oben
+        </p>
+      </div>
+    </div>
+    <section>
+      <!-- AGB -->
+      <!-- Modal für AGB -->
+      <div id="modalAGB" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Text für das Modal-Fenster des Safari -->
+          <h2>AGB</h2>
+          <h3>
+            Allgemeine Geschäftsbedingungen <br />
+            der TRAILEX Offroad Autovermietung GmbH
+          </h3>
+          <h4>§1 Geltungsbereich</h4>
+          <p>
+            Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle
+            Verträge, die zwischen der TRAILEX Offroad Autovermietung GmbH
+            (nachfolgend "TRAILEX") und ihren Kunden über die Anmietung von
+            Fahrzeugen abgeschlossen werden. Abweichende Bedingungen des Kunden
+            erkennen wir nicht an, es sei denn, TRAILEX hätte ausdrücklich
+            schriftlich ihrer Geltung zugestimmt.
+          </p>
+          <h4>§2 Vertragsabschluss</h4>
+          <p>
+            (1) Die Präsentation der Fahrzeuge auf der Website von TRAILEX
+            stellt kein rechtlich bindendes Angebot, sondern einen
+            unverbindlichen Online-Katalog dar. Durch das Ausfüllen und Absenden
+            des Online-Buchungsformulars gibt der Kunde ein verbindliches
+            Angebot auf Abschluss eines Mietvertrages ab.(2) TRAILEX kann dieses
+            Angebot innerhalb von sieben Tagen durch Zusendung einer
+            Auftragsbestätigung per E-Mail oder durch Auslieferung des
+            angemieteten Fahrzeugs annehmen.
+          </p>
+          <h4>§3 Mietdauer und Rückgabe</h4>
+          <p>
+            (1) Die Mietdauer beginnt zum vereinbarten Zeitpunkt und endet mit
+            der Rückgabe des Fahrzeugs an TRAILEX. Das Fahrzeug muss in dem
+            Zustand zurückgegeben werden, in dem es übernommen wurde. <br />
+            (2) Bei verspäteter Rückgabe des Fahrzeugs werden zusätzliche
+            Gebühren fällig. Diese Gebühren entsprechen den üblichen Tagesmieten
+            zuzüglich eines Zuschlags von 50%.
+          </p>
+          <h4>§4 Mietpreise und Zahlungsbedingungen</h4>
+          <p>
+            (1) Die angegebenen Mietpreise sind bindend. Sie schließen die
+            gesetzliche Mehrwertsteuer ein. (2) Die Zahlung des Mietpreises
+            erfolgt per Vorauskasse, per Kreditkarte oder per Überweisung.
+          </p>
+          <h4>§5 Haftung und Versicherung</h4>
+          <p>
+            (1) Das Fahrzeug ist vollkaskoversichert. Im Schadensfall trägt der
+            Kunde eine Selbstbeteiligung in Höhe von 500 Euro. (2) TRAILEX
+            haftet nicht für den Verlust persönlicher Gegenstände, die im
+            gemieteten Fahrzeug hinterlassen wurden.
+          </p>
+          <h4>
+            §6 Kündigung Der Kunde kann den Mietvertrag jederzeit kündigen.
+          </h4>
+          <p>
+            Im Falle einer Stornierung bis zu 24 Stunden vor Mietbeginn werden
+            bereits gezahlte Beträge abzüglich einer Stornierungsgebühr von 20%
+            des Mietpreises erstattet. Bei späteren Stornierungen erfolgt keine
+            Rückerstattung.
+          </p>
+          <h4>§7 Schlussbestimmungen</h4>
+          <p>
+            (1) Änderungen oder Ergänzungen dieses Vertrags bedürfen der
+            Schriftform. (2) Sollten einzelne Bestimmungen dieses Vertrags
+            unwirksam sein oder werden, so wird dadurch die Wirksamkeit der
+            übrigen Bestimmungen nicht berührt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo">
+        <img src="imgs/Tailex_logo.png" alt="Trailex Logo" />
+      </div>
+      <div class="container">
+        <div>
+          Wir sorgen für Ihr Unvergessliches Offroad-Erlebnis. Mit den besten
+          Autos und einem sensationellen Service
+        </div>
+        <div>
+          <p>IBAN: DE89 9956 0000 7895 65</p>
+          <p>PayPal</p>
+        </div>
+        <div>
+          <p>TRAILEX</p>
+          <p>Am feld 12</p>
+          <p>79563 Pappenheim</p>
+        </div>
+        <div>
+          <div class="legal">
+            <button
+              class="buttonCall agbImpressumButton"
+              data-modal-id="modalImpressum"
+            >
+              Impressum
+            </button>
+            <button
+              class="buttonCall agbImpressumButton"
+              data-modal-id="modalAGB"
+            >
+              AGB
+            </button>
+          </div>
+          <div>
+            <p class="fa fa-instagram"></p>
+            <p class="fa fa-youtube"></p>
+            <p class="fa fa-facebook"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
